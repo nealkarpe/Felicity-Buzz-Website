@@ -26,19 +26,19 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 		<!-- CSS WebSlides -->
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/webslides.css') }}">
 		<!-- Optional - CSS SVG Icons (Font Awesome) -->
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/svg-icons.css') }}">
 		<!-- CSS Countdown -->
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/countdown.css">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/countdown.css') }}">
 		<!-- CSS Sponsers -->
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/sponsors.css">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/sponsors.css') }}">
 		<!-- CSS Gallery -->
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/gallery.css">
-		<link rel="stylesheet" type='text/css' media='all' href="../static/css/blueimp-gallery.min.css">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/gallery.css') }}">
+		<link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/blueimp-gallery.min.css') }}">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    		<!--<link rel="stylesheet" href="../static/css/demo.css"/>
-    		<link rel="stylesheet" href="../static/css/theme3.css"/>
+    		<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}"/>
+    		<link rel="stylesheet" href="{{ url_for('static', filename='css/theme3.css') }}"/>
 		<script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
   		<script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
   		<script type='text/javascript' src='planetaryjs.js'></script>-->
@@ -47,7 +47,7 @@
 		<meta property="og:url" content="http://www.facebook.com/felicity.iiith">
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Felicity · IIIT-Hyderabad">
-		<!-- <meta property="og:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+		<!-- <meta property="og:image" content="{{ url_for('static', filename='images/share-webslides.jpg }}"> <!-- EDIT -->
 		<!-- TWITTER -->
 		<!-- <meta name="twitter:card" content="summary_large_image"> -->
 		<!-- <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
@@ -55,16 +55,16 @@
 		<!-- <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
 		<!-- <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">  -->
 		<!-- EDIT -->
-		<!-- <meta name="twitter:image" content="../static/images/share-webslides.jpg"> -->
+		<!-- <meta name="twitter:image" content="{{ url_for('static', filename='images/share-webslides.jpg }}"> -->
 		<!-- EDIT -->
 		<!-- FAVICONS -->
-		<link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
-		<link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
-		<link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
-		<link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
-		<link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
-		<link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
-		<link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+		<link rel="shortcut icon" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon.png }}">
+		<link rel="shortcut icon" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32.png }}">
+		<link rel="apple-touch-icon icon" sizes="76x76" href="{{ url_for('static', filename='images/favicons/favicon-76.png }}">
+		<link rel="apple-touch-icon icon" sizes="120x120" href="{{ url_for('static', filename='images/favicons/favicon-120.png }}">
+		<link rel="apple-touch-icon icon" sizes="152x152" href="{{ url_for('static', filename='images/favicons/favicon-152.png }}">
+		<link rel="apple-touch-icon icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/favicon-180.png }}">
+		<link rel="apple-touch-icon icon" sizes="192x192" href="{{ url_for('static', filename='images/favicons/favicon-192.png }}">
 		<!-- Android -->
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="#333333">
@@ -91,11 +91,11 @@
 	   - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
 			-->
 			<section class="bg-gradient-h bg-red">
-				<span class="background light" style="background-image:url('../static/images/backgrounds/1.jpg')"></span>
+				<span class="background light" style="background-image:url('{{ url_for('static', filename='images/backgrounds/1.jpg') }}"></span>
 				<!--.wrap = container (width: 90%) -->
 				<div class="aligncenter size-30">
 					<div class="content-center aligncenter fadeInUp">
-						<img src="../static/images/logos/buzz2.png" class="img.whitelogo" />
+						<img src="{{ url_for('static', filename='images/logos/buzz2.png" class="img.whitelogo" />
 						<p class="text-landing">
 						<br/> 20-22 October 2017
 						</p>
@@ -104,7 +104,7 @@
 				<!-- .end .wrap -->
 			</section>
 			<section class="bg-gradient-h bg-red">
-				<span class="background light" style="background-image:url('../static/images/backgrounds/2.jpg')"></span>
+				<span class="background light" style="background-image:url('{{ url_for('static', filename='images/backgrounds/2.jpg') }}"></span>
 				<div class="content-left bg-trans-light fadeInUp">
 					<h3><strong>ABOUT US</strong></h3>
 					<p class="text-intro">
@@ -113,12 +113,12 @@
 				</div>
 			</section><!--
 			<section class="bg-gradient-h bg-red">
-					<span class="background light" style="background-image:url('../static/images/backgrounds/5.jpg')"></span>
+					<span class="background light" style="background-image:url('{{ url_for('static', filename='images/backgrounds/5.jpg') }}"></span>
 					<div class="aligncenter size-80">
 					<div class="content-center aligncenter bg-trans-light fadeInUp">
 						<h3><strong>Events</strong></h3>
 						
-						<img src="../static/images/logos/events1.jpg" class="img.whitelogo" />
+						<img src="{{ url_for('static', filename='images/logos/events1.jpg" class="img.whitelogo" />
 						
 						<p class="text-intro">
 
@@ -128,7 +128,7 @@
 				</section>
 
 				<section class="bg-gradient-h bg-red">
-						<span class="background light" style="background-image:url('../static/images/backgrounds/6.jpg')"></span>
+						<span class="background light" style="background-image:url('{{ url_for('static', filename='images/backgrounds/6.jpg') }}"></span>
 						<div class="aligncenter size-60">
 						<div class="content-center aligncenter bg-trans-light fadeInUp">
 							<h3><strong>Schedule</strong></h3>
@@ -143,7 +143,7 @@
 					</section>-->
 			
 			<!--		<section class="bg-gradient-h bg-red">
-						<span class="background light" style="background-image:url('../static/images/backgrounds/6.jpg')"></span>
+						<span class="background light" style="background-image:url('{{ url_for('static', filename='images/backgrounds/6.jpg') }}"></span>
 						<div class="aligncenter size-60">
 						<div class="content-center aligncenter bg-trans-light fadeInUp">
 							<h3><strong></strong></h3>
@@ -175,11 +175,11 @@
 	  </div>
 	  </footer>  -->
 	  <!-- Required -->
-	  <script src="../static/js/webslides.js"></script>
-	  		<script src="../static/js/jquery.min.js"></script>
-		<script src="../static/js/jquery.blueimp-gallery.min.js"></script><!-- gallery -->
-	  <!--<script type="text/javascript" src="../static/js/caleandar.js"></script>
-    	  <script type="text/javascript" src="../static/js/demo.js"></script>
+	  <script src="{{ url_for('static', filename='js/webslides.js') }}"></script>
+	  		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.blueimp-gallery.min.js') }}"></script><!-- gallery -->
+	  <!--<script type="text/javascript" src="{{ url_for('static', filename='js/caleandar.js"></script>
+    	  <script type="text/javascript" src="{{ url_for('static', filename='js/demo.js"></script>
 	  <script type='text/javascript' src='yourApp.js'></script>-->
 
 	  <script>
@@ -188,7 +188,7 @@ window.ws = new WebSlides({
 });
 	  </script>
 	  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-	  <script defer src="../static/js/svg-icons.js"></script>
+	  <script defer src="{{ url_for('static', filename='js/svg-icons.js') }}"></script>
 	  <!-- The Modal -->
 	</body>
 
