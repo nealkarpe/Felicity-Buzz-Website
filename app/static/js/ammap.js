@@ -1186,7 +1186,7 @@
             this.borderAlpha = this.backgroundAlpha = 0;
             this.color = this.borderColor = "#000000";
             this.fontFamily = "Verdana";
-            this.fontSize = 11;
+            this.fontSize = 16;
             this.usePrefixes = !1;
             this.autoResize = !0;
             this.autoDisplay = !1;
@@ -3808,14 +3808,25 @@
         },
         showAsRolledOver: function(a) {
             var b = a.displayObject;
-            console.log(a);
+            //console.log(a);
             a.rollOverColorReal = "#b30000";
             a.rollOverScaleReal = 2;
             a.balloonTextReal = "[[title]]";
             if (!a.showAsSelected && b && !a.isOver) {
                 b.node.onmouseout = function() {};
                 b.node.onmouseover = function() {};
-                b.node.onclick = function() {window.location.href = "./" + a.contest};
+                // b.node.onclick = function() {window.location.href = "./" + a.contest};
+                b.node.onclick = function() {
+
+                     if(a.contest=="schedule")
+                        window.location.href = "./" + a.contest + ".pdf";
+                        //window.location.href = "./" + a.contest + ".html";
+                    else if(a.contest=="code-craft")
+                        window.location.href = "http://codeforces.com/group/yny9prUF8z";
+                    else
+                         window.location.href = "./" + a.contest + ".html";
+
+                };
                 !a.isFirst && a.bringForwardOnHover && (b.toFront(), a.isFirst = !0);
                 var c = a.rollOverColorReal,
                     e;
@@ -4218,10 +4229,10 @@
             }
         },
         doDoubleClickZoom: function() {
-            if (!this.mapWasDragged) {
+          /*  if (!this.mapWasDragged) {
                 var a = this.zoomLevel() * this.zoomControl.zoomFactor;
                 this.zoomToStageXY(a, this.mouseX, this.mouseY)
-            }
+           }*/
         },
         getDevInfo: function() {
             var a = this.zoomLevel(),
