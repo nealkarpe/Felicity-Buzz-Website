@@ -1,15 +1,195 @@
-{% block content %}
-<div class="row">
-  <div class="col-sm-12">
-    <div class="page-header"><h1>About Felicity</h1></div>
-    <div class="jumbotron ">
-      <blockquote>
-        I believe I have found the perfect designation for the proposed celebration - A time of enjoyment, revelling, appreciation of the privilege, freedom and comfort given to you, a sense of celebration, the feeling and hope that everything is alright with the world - Felicity, 2018.    
-      </blockquote>
-      <p class="lead">
-        A year's worth of excitement, fervour and hard work packed into 3 amazing days. Felicity is the annual techno-cultural fest of IIIT-Hyderabad, and would go on from January 27th to 29th. This time, our theme celebrates that one merry period of life, when we were young, curious and free. This Felicity we dedicate these three days to take a trip around the world, and experience the rich and diverse culture that IIIT has to offer. Felicity '18 - Around the world in 3 days.
-      </p>
-    </div>
-  </div>
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CLEAN MARKUP = GOOD KARMA.
+	  Hi source code lover,
+
+	  you're a curious person and a fast learner ;)
+	  Let's make something beautiful together. Contribute on Github:
+	  https://github.com/webslides/webslides
+
+	  Thanks,
+	  @jlantunez.
+		-->
+		<!-- SEO -->
+		<title>Felicity Buzz · IIIT-Hyderabad</title>
+		<meta name="keywords" content="felicity, buzz, buzz17, felicty17, college, fest, threads, pulsation, iiit, iiith, international, institute, information, technology, hyderabad">
+		<meta name="description" content="Felicity Buzz is the annual technical and cultural fest of IIIT-H for first years. Includes technical, literary events, zombie-zone, workshops and performances. ">
+		<meta property="og:description" content="Felicity Buzz is the annual technical and cultural fest of IIIT-H for first years. Includes technical, literary events, zombie-zone, workshops and performances.">
+		<meta property="og:title" content="Felicity · IIIT-H">
+		<!-- <meta property="og:image" content="https://felicity.iiit.ac.in/files/17/poster-17.jpg"> -->
+		<!-- URL CANONICAL -->
+		<!-- <link rel="canonical" href="http://your-url.com/"> -->
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+		<!-- CSS WebSlides -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+		<!-- Optional - CSS SVG Icons (Font Awesome) -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+		<!-- CSS Countdown -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/countdown.css">
+		<!-- CSS Sponsers -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/sponsors.css">
+		<!-- CSS Gallery -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/gallery.css">
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/blueimp-gallery.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    		<!--<link rel="stylesheet" href="../static/css/demo.css"/>
+    		<link rel="stylesheet" href="../static/css/theme3.css"/>
+		<script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  		<script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+  		<script type='text/javascript' src='planetaryjs.js'></script>-->
+		<!-- SOCIAL CARDS (ADD YOUR INFO) -->
+		<!-- FACEBOOK -->
+		<meta property="og:url" content="http://www.facebook.com/felicity.iiith">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Felicity · IIIT-Hyderabad">
+		<!-- <meta property="og:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+		<!-- TWITTER -->
+		<!-- <meta name="twitter:card" content="summary_large_image"> -->
+		<!-- <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+		<!-- <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+		<!-- <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+		<!-- <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">  -->
+		<!-- EDIT -->
+		<!-- <meta name="twitter:image" content="../static/images/share-webslides.jpg"> -->
+		<!-- EDIT -->
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+		<link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+		<link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+		<link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+		<link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+		<link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+		<link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+		<!-- Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#333333">
+	</head>
+
+	<body>
+		<header>
+			<nav role="navigation">
+				<p class="logo"><a href="#slide=1" title="WebSlides">WebSlides</a></p>
+				<ul>
+					<li>
+						<a href="#slide=2" title="About Us">
+							About Us
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main role="main">
+		<article id="webslides" class="vertical">
+			<!-- Quick Guide
+	   - Each parent <section> in the <article id="webslides"> element is an individual slide.
+	   - Vertical sliding = <article id="webslides" class="vertical">
+	   - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+			-->
+			<section class="bg-gradient-h bg-red">
+				<span class="background light" style="background-image:url('../static/images/backgrounds/1.jpg')"></span>
+				<!--.wrap = container (width: 90%) -->
+				<div class="aligncenter size-30">
+					<div class="content-center aligncenter fadeInUp">
+						<img src="../static/images/logos/buzz2.png" class="img.whitelogo" />
+						<p class="text-landing">
+						<br/> 20-22 October 2017
+						</p>
+					</div>
+				</div>
+				<!-- .end .wrap -->
+			</section>
+			<section class="bg-gradient-h bg-red">
+				<span class="background light" style="background-image:url('../static/images/backgrounds/2.jpg')"></span>
+				<div class="content-left bg-trans-light fadeInUp">
+					<h3><strong>ABOUT US</strong></h3>
+					<p class="text-intro">
+							Felicity buzz is the annual techno-cultural fest organized for the UG1 by UG2, and would go on from October 20th to 22nd. This time, our theme celebrates the voyage around the world. This Felicity we dedicate these three days to walk you around the globe. Felicity '18 - Around the world in 3 days.
+					</p>
+				</div>
+			</section><!--
+			<section class="bg-gradient-h bg-red">
+					<span class="background light" style="background-image:url('../static/images/backgrounds/5.jpg')"></span>
+					<div class="aligncenter size-80">
+					<div class="content-center aligncenter bg-trans-light fadeInUp">
+						<h3><strong>Events</strong></h3>
+						
+						<img src="../static/images/logos/events1.jpg" class="img.whitelogo" />
+						
+						<p class="text-intro">
+
+						</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-gradient-h bg-red">
+						<span class="background light" style="background-image:url('../static/images/backgrounds/6.jpg')"></span>
+						<div class="aligncenter size-60">
+						<div class="content-center aligncenter bg-trans-light fadeInUp">
+							<h3><strong>Schedule</strong></h3>
+							
+							<p class="text-intro">
+								<div id="caleandar">
+
+				        			</div>
+							</p>
+							</div>
+						</div>
+					</section>-->
+			
+			<!--		<section class="bg-gradient-h bg-red">
+						<span class="background light" style="background-image:url('../static/images/backgrounds/6.jpg')"></span>
+						<div class="aligncenter size-60">
+						<div class="content-center aligncenter bg-trans-light fadeInUp">
+							<h3><strong></strong></h3>
+							
+							<canvas id='globe' width='500' height='500'></canvas>
+							
+							</div>
+						</div>
+					</section>
+			-->
+			<!-- end article -->
+		</main>
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	<!-- The container for the modal slides -->
+	<div class="slides"></div>
+	<!-- Controls for the borderless lightbox -->
+	<h3 class="title">Title</h3>
+	<a class="prev">‹</a>
+	<a class="next">›</a>
+	<a class="close">×</a>
+	<!-- The modal dialog, which will be used to wrap the lightbox content -->
 </div>
-{% endblock %}
+		<!-- end main -->
+		<!-- A global footer
+
+	  <footer role="contentinfo">
+	  <div class="wrap">
+	  <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+	  </div>
+	  </footer>  -->
+	  <!-- Required -->
+	  <script src="../static/js/webslides.js"></script>
+	  		<script src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/jquery.blueimp-gallery.min.js"></script><!-- gallery -->
+	  <!--<script type="text/javascript" src="../static/js/caleandar.js"></script>
+    	  <script type="text/javascript" src="../static/js/demo.js"></script>
+	  <script type='text/javascript' src='yourApp.js'></script>-->
+
+	  <script>
+window.ws = new WebSlides({
+	loop: false
+});
+	  </script>
+	  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+	  <script defer src="../static/js/svg-icons.js"></script>
+	  <!-- The Modal -->
+	</body>
+
+</html>

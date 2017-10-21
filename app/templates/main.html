@@ -1,4 +1,4 @@
-{% block head %}
+{% block content %}
   <!-- Resources -->
   <script src="{{ url_for('static', filename='js/ammap.js') }}" type="text/javascript"></script>
   <script src="{{ url_for('static', filename='js/worldLow.js') }}" type="text/javascript"></script>
@@ -205,8 +205,6 @@
   </script>
 
 
-{% endblock %}
-{% block content %}
   <body bgcolor="#e6e6e6">
   <center><img src="{{ url_for( 'static', filename='images/logo.png') }}" width="10%"/></center>
   <p style="font-family: Chewy"> Around the world in 3 days </p>

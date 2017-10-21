@@ -25,7 +25,7 @@ def contact():
 @app.route('/team', methods=['GET'])
 def team():
     title = "Meet the team"
-    server_team = ['Arjun Nemani', 'Anukul Sagwan']
+    server_team = ['Arjun Nemani', 'Anukul Sangwan']
     others = ['Gunjan Karamchandani', 'Neal Karpe', 'Sayak Kundu', 
     'Kunal Garg', 'Mohammed Ali', 'Pratik Kamble']
     members = []
