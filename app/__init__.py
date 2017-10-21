@@ -55,6 +55,12 @@ def toastmaster():
     filename = url_for('static', filename="images/toastmaster.jpg")
     return render_template('poster.html', title=title, filename=filename)
 
+@app.route('/schedule', methods=['GET'])
+def schedule():
+    title = "Schedule"
+    filename = url_for('static', filename="images/schedule.jpg")
+    return render_template('poster.html', title=title, filename=filename)
+
 
 @app.route('/debate', methods=['GET'])
 def debate():
