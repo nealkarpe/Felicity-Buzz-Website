@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head %}
+<style>
+	.well > img {
+		border-radius: 50%;
+	}
+</style>
+{% endblock %}
+{% block content %}
+<div class="row">
+	{% for member in members %}
+	<div class="col-sm-4 col-md-3">
+		<div class="well">
+		<img src="{{ member.avatar }}" class="thumbnail">
+		<h4>{{ member.name }}</h4>
+		<p class="text-muted">{{ member.position }}</p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}
