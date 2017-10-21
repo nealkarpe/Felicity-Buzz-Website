@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ title }} - Felicity Buzz 2017</title>
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+	{% block head %}
+	{% endblock %}
+	<style>
+	body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		font-family: 'Roboto', sans-serif;
+	}
+	main {
+		flex: 1 0 auto;
+	}		
+	a.navbar-brand > img {
+		margin-top: -15px;
+	}
+	.grey {
+		background-color: #e6e6e6;
+	}
+</style>
+</head>
+<body class="grey">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-align-justify"></i>
+				</button>
+				<a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" height="50px" width="auto"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offline Events <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/zombiezone">ZombieZone</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="/toastmasters">Toastmasters</a></li>
+							<li><a href="/debate">Debate</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Events<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/litquiz">LitQuiz</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="/codecraft">CodeCraft</a></li>
+							<li><a href="/cachein">CacheIn</a></li>
+							<li><a href="/gordionknot">GordionKnot</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/login">Login</a></li>
+					<li><a href="/about">About Felicity</a></li>
+					<li><a href="/team">Team</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<main>
+	<div class="container-fluid">
+		{% block content %}
+		{% endblock %}
+	</div>
+	</main>
+	<footer class="footer">
+		<div class="container-fluid">
+			<h4 class="text-right">
+				Felicity 2018 &copy; <small class="text-muted">Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></small>
+			</h4>
+		</div>
+	</footer>
+</body>
+</html>

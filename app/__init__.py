@@ -72,6 +72,10 @@ def debate():
     width = "width:37%"
     return render_template('poster.html', title=title, filename=filename, width=width)
 
+@app.route('/codecraft', methods=['GET'])
+def codecraft():
+    return redirect("http://codeforces.com/group/yny9prUF8z/contest/216594/standings/groupmates/true")
+
 '''
 zombiezone - INTERNAL
 toastmaster - INTERNAL
