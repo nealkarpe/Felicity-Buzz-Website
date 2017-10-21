@@ -47,26 +47,30 @@ def team():
 def zombie():
     title = "Zombie Zone"
     filename = url_for('static', filename='images/zombiezone.jpg')
-    return render_template('poster.html', title=title, filename=filename)
+    width = "width:69%"
+    return render_template('poster.html', title=title, filename=filename, width=width)
 
 @app.route('/toastmasters', methods=['GET'])
 def toastmaster():
     title = "Toastmaster"
     filename = url_for('static', filename="images/toastmaster.jpg")
-    return render_template('poster.html', title=title, filename=filename)
+    width = "width:35%"
+    return render_template('poster.html', title=title, filename=filename, width=width)
 
 @app.route('/schedule', methods=['GET'])
 def schedule():
     title = "Schedule"
     filename = url_for('static', filename="images/schedule.jpg")
-    return render_template('poster.html', title=title, filename=filename)
+    width = "width:100%"
+    return render_template('poster.html', title=title, filename=filename, width=width)
 
 
 @app.route('/debate', methods=['GET'])
 def debate():
     title = "Debate"
     filename = url_for('static', filename="images/debate.jpg")
-    return render_template('poster.html', title=title, filename=filename)
+    width = "width:37%"
+    return render_template('poster.html', title=title, filename=filename, width=width)
 
 '''
 zombiezone - INTERNAL
