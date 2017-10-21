@@ -76,6 +76,11 @@ def debate():
 def codecraft():
     return redirect("http://codeforces.com/group/yny9prUF8z/contest/216594/standings/groupmates/true")
 
+@app.route('/litquiz', methods=['GET'])
+def litquiz():
+    return redirect("https://goo.gl/forms/iDUuQbnArg80qi4D2")
+
+
 '''
 zombiezone - INTERNAL
 toastmaster - INTERNAL
