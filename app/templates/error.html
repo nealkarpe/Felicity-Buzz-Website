@@ -1,11 +1,12 @@
 {% block head %}
 <style>
 	.big-image {
-		height: 100%;
-		width: 100%;
+		width: 75%;
 	}
 </style>
 {% endblock %}
 {% block content %}
-<center><img class="big-image img-responsive text-center" src="{{ url_for('static', filename='images/404.jpg') }}"></center>
+<body style="text-align: center;background-color:#e6e6e6">
+<center><img class="big-image img-responsive text-center" style="vertical-align: middle;margin-top:85" src="{{ url_for('static', filename='images/404.jpg') }}"></center>
+</body>
 {% endblock %}
