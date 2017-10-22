@@ -25,7 +25,7 @@ def contact():
 @app.route('/team', methods=['GET'])
 def team():
     title = "Meet the team"
-    server_team = ['Arjun Nemani']
+    server_team = ['Arjun Nemani', 'Anukul Sangwan']
     others = ['Gunjan Karamchandani', 'Neal Karpe', 'Sayak Kundu', 
     'Kunal Garg', 'Mohammed Ali']
     members = []
@@ -80,6 +80,10 @@ def codecraft():
 def litquiz():
     return redirect("https://goo.gl/forms/iDUuQbnArg80qi4D2")
 
+@app.route('/gordianknot', methods=['GET'])
+def gordianknot():
+    return redirect("https://enigmatic-retreat-58843.herokuapp.com/")
+
 
 '''
 zombiezone - INTERNAL
@@ -87,5 +91,5 @@ toastmaster - INTERNAL
 litquiz - EXTERNAL
 codecraft - EXTERNAL
 cachein - EXTERNAL
-gordionknot - EXTERNAL
+gordianknot - EXTERNAL
 '''
